@@ -1,0 +1,11 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:latest", "types/phaser.d.ts", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+      "file-name-casing": false,
+      "no-unnecessary-generics": false,
+      "semicolon": [true, "always", "ignore-bound-class-methods"],
+      "trailing-comma": true
+  }
+}
