@@ -1,6 +1,6 @@
 {
   "defaultSeverity": "error",
-  "extends": ["tslint:latest", "types/phaser.d.ts", "tslint-config-prettier"],
+  "extends": ["tslint:latest", "types/*", "tslint-config-prettier"],
   "jsRules": {},
   "rules": {
       "file-name-casing": false,
