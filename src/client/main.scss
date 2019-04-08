@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Enter Command';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/EnterCommand.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Enter Command';
+  font-weight: normal;
+  font-style: italic;
+  src: url('/fonts/EnterCommand-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Enter Command';
+  font-weight: bold;
+  font-style: normal;
+  src: url('/fonts/EnterCommand-Bold.ttf') format('truetype');
+}
+
+h1 {
+  font-family: "Enter Command";
+}
