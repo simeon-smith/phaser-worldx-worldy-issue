@@ -14,11 +14,29 @@
 
 @font-face {
   font-family: 'Enter Command';
-  font-weight: bold;
+  font-weight: "bold";
   font-style: normal;
   src: url('/fonts/EnterCommand-Bold.ttf') format('truetype');
 }
 
-h1 {
-  font-family: "Enter Command";
+$ease-in-out: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+#game-wrapper {
+  background: #efe8ce;
+  width: 800px;
+  height: 600px;
+  position: relative;
+
+  img {
+    width: 528px;
+    height: 184px;
+    top: 142px;
+    left: 136px;
+    position: absolute;
+    pointer-events: none;
+
+    &.hide {
+      display: none;
+    }
+  }
 }

@@ -2,23 +2,26 @@ import Phaser from "phaser";
 
 import "./main.scss";
 
-import LoadingScene from "./scenes/LoadingScene";
+import InitialLoadingScene from "./scenes/InitialLoadingScene";
+import CharacterCreationScene from "./scenes/CharacterCreationScene";
+import HowToPlayScene from "./scenes/HowToPlayScene";
 import MainMenuScene from "./scenes/MainMenuScene";
 import GameScene from "./scenes/GameScene";
+import colors from "./consts/colors";
 
 const config: GameConfig = {
   title: "CODENAME: Padawan",
   version: "1",
-  width: 800,
-  height: 600,
-  zoom: 1,
+  width: 1600,
+  height: 1200,
+  zoom: 0.5,
   type: Phaser.AUTO,
-  parent: "game",
-  scene: [LoadingScene, MainMenuScene, GameScene],
+  parent: "game-wrapper",
+  scene: [InitialLoadingScene, CharacterCreationScene, HowToPlayScene, MainMenuScene, GameScene],
   input: {
     keyboard: true,
   },
-  backgroundColor: "#000000",
+  backgroundColor: colors.tan.hex,
   render: { pixelArt: true, antialias: true },
 };
 
