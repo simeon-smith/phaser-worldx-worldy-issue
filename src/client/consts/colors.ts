@@ -51,11 +51,12 @@ class Color {
 }
 
 const colors: { [any: string]: Color } = {
-  blue: new Color("#4286f4"),
-  ltBlue: new Color("#68a2ff"),
-  tan: new Color("#efe8ce"),
-  medTan: new Color("#e2dabc"),
   white: new Color("#ffffff"),
+  black: new Color("#171c21"),
+  blue: new Color("#0075bc"),
+  darkblue: new Color("#005c94"),
+  offwhite: new Color("#eef2f7"),
+  gray: new Color("#4d5257"),
 };
 
 export default colors;

@@ -20,9 +20,15 @@
 }
 
 $ease-in-out: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$white: #ffffff;
+$black: #171c21;
+$blue: #0075bc;
+$darkblue: #005c94;
+$offwhite: #eef2f7;
+$gray: #4d5257;
 
 #game-wrapper {
-  background: #efe8ce;
+  background: $black;
   width: 800px;
   height: 600px;
   position: relative;

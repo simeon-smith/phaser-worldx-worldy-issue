@@ -14,7 +14,7 @@ export default class InitialLoadingScene extends Phaser.Scene {
   }
 
   preload(): void {
-    this.cameras.main.setBackgroundColor(colors.tan.string);
+    this.cameras.main.setBackgroundColor(colors.black.string);
     this.createLoadingbar();
 
     this.load.on(
@@ -67,16 +67,16 @@ export default class InitialLoadingScene extends Phaser.Scene {
       this,
     );
 
-    this.load.pack("preload", "../client/assets/pack.json", "preload");
+    this.load.pack("initialLoad", "../client/assets/initial-load.json", "preload");
   }
 
   update(): void {
-    setTimeout(() => this.scene.start("CharacterCreationScene"), 1000);
+    setTimeout(() => this.scene.start("HowToPlayScene"), 1000);
   }
 
   private createLoadingbar(): void {
     this.loadingBar = this.add.graphics();
-    this.loadingBar.fillStyle(colors.medTan.hex, 1);
+    this.loadingBar.fillStyle(colors.gray.hex, 1);
     this.loadingBar.fillRect((this.cameras.main.width - 708) / 2, 886, 708, 40);
     this.progressBar = this.add.graphics();
   }

@@ -12,11 +12,6 @@
         "url": "./client/assets/sprites/bullet.png"
       },
       {
-        "type": "image",
-        "key": "player",
-        "url": "./client/assets/sprites/player.png"
-      },
-      {
         "type": "spritesheet",
         "key": "octopus",
         "url": "./client/assets/sprites/octopus.png",
@@ -62,6 +57,16 @@
         "type": "binary",
         "key": "EnterCommand",
         "url": "./public/fonts/EnterCommand.ttf"
+      },
+      {
+        "type": "image",
+        "key": "gridTest",
+        "url": "./client/assets/images/grid-test.png"
+      },
+      {
+        "type": "image",
+        "key": "player",
+        "url": "./client/assets/images/player.png"
       }
     ]
   }

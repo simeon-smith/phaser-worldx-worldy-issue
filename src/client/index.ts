@@ -3,7 +3,6 @@ import Phaser from "phaser";
 import "./main.scss";
 
 import InitialLoadingScene from "./scenes/InitialLoadingScene";
-import CharacterCreationScene from "./scenes/CharacterCreationScene";
 import HowToPlayScene from "./scenes/HowToPlayScene";
 import MainMenuScene from "./scenes/MainMenuScene";
 import GameScene from "./scenes/GameScene";
@@ -17,12 +16,18 @@ const config: GameConfig = {
   zoom: 0.5,
   type: Phaser.AUTO,
   parent: "game-wrapper",
-  scene: [InitialLoadingScene, CharacterCreationScene, HowToPlayScene, MainMenuScene, GameScene],
+  scene: [InitialLoadingScene, HowToPlayScene, MainMenuScene, GameScene],
   input: {
     keyboard: true,
   },
-  backgroundColor: colors.tan.hex,
-  render: { pixelArt: true, antialias: true },
+  physics: {
+    default: "arcade",
+    arcade: {
+      gravity: { y: 0 },
+    },
+  },
+  backgroundColor: colors.black.hex,
+  render: { pixelArt: true },
 };
 
 export class Game extends Phaser.Game {

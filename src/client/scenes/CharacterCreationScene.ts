@@ -1,5 +1,9 @@
 import colors from "../consts/colors";
 export default class CharacterCreationScene extends Phaser.Scene {
+  logo: Phaser.GameObjects.Image;
+  placeholderText: Phaser.GameObjects.Text;
+  continueButton: Phaser.GameObjects.Text;
+
   constructor() {
     super({
       key: "CharacterCreationScene",
@@ -11,9 +15,7 @@ export default class CharacterCreationScene extends Phaser.Scene {
   preload(): void {}
 
   create(): void {
-    this.load.pack("preload", "../client/assets/pack.json", "preload");
-
-    this.cameras.main.setBackgroundColor(colors.tan.string);
+    this.cameras.main.setBackgroundColor(colors.black.string);
     this.logo = this.add.image(136, 142, "logo").setOrigin(0, 0);
     this.logo.displayHeight = 92;
     this.logo.displayWidth = 264;
@@ -22,18 +24,21 @@ export default class CharacterCreationScene extends Phaser.Scene {
     this.placeholderText = this.add.text(0, 0, "The Character Creation Screen", {
       fontFamily: "Enter Command",
       fontSize: "64px",
-      color: colors.blue.string,
+      color: colors.white.string,
     });
 
     this.createContinueButton();
+
+    this.load.pack("game-load", "../client/assets/pack.json", "game-load");
   }
 
   createContinueButton(): void {
-    this.continueButton = this.add.text(200, 200, "TEST BUTTON", {
+    this.continueButton = this.add.text(200, 200, "Continue", {
       fontFamily: "Enter Command",
       fontSize: "64px",
       color: colors.white.string,
       backgroundColor: colors.blue.string,
+      padding: { left: 20, right: 20, top: 20, bottom: 20 },
     });
 
     this.continueButton.setInteractive();
@@ -67,7 +72,7 @@ export default class CharacterCreationScene extends Phaser.Scene {
   }
 
   update(): void {
-    if (this.state.testButton === "hover") {
-    }
+    // REMOVE THIS LATER - JUST TO AUTO CLICK THROUGH SCENE
+    setTimeout(() => this.continue(), 1000);
   }
 }
