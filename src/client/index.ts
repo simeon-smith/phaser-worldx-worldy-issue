@@ -19,6 +19,8 @@ const config: GameConfig = {
   scene: [InitialLoadingScene, HowToPlayScene, MainMenuScene, GameScene],
   input: {
     keyboard: true,
+    touch: true,
+    mouse: true,
   },
   physics: {
     default: "arcade",
@@ -37,5 +39,5 @@ export class Game extends Phaser.Game {
 }
 
 window.addEventListener("load", () => {
-  new Game(config);
+  const game = new Game(config);
 });

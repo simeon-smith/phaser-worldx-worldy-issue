@@ -1,5 +1,5 @@
 {
-  "preload": {
+  "initial": {
     "files": [
       {
         "type": "json",
@@ -57,16 +57,6 @@
         "type": "binary",
         "key": "EnterCommand",
         "url": "./public/fonts/EnterCommand.ttf"
-      },
-      {
-        "type": "image",
-        "key": "gridTest",
-        "url": "./client/assets/images/grid-test.png"
-      },
-      {
-        "type": "image",
-        "key": "player",
-        "url": "./client/assets/images/player.png"
       }
     ]
   }

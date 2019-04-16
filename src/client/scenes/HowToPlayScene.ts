@@ -1,5 +1,6 @@
 import AnimationHelper from "../helpers/AnimationHelper";
 import colors from "../consts/colors";
+import filePack from "../assets/main.json";
 
 export default class HowToPlayScene extends Phaser.Scene {
   logo: Phaser.GameObjects.Image;
@@ -12,6 +13,10 @@ export default class HowToPlayScene extends Phaser.Scene {
   constructor() {
     super({
       key: "HowToPlayScene",
+      pack: {
+        key: "main",
+        file: "../assets/main-pack.json",
+      },
     });
   }
 
@@ -60,8 +65,6 @@ export default class HowToPlayScene extends Phaser.Scene {
       },
       this,
     );
-
-    this.load.pack("mainLoad", "../client/assets/main-load.json", "preload");
   }
 
   create() {}
