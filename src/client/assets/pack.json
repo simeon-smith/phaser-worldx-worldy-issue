@@ -42,21 +42,6 @@
         "type": "image",
         "key": "logo",
         "url": "./client/assets/images/logo.svg"
-      },
-      {
-        "type": "binary",
-        "key": "EnterCommandBold",
-        "url": "./public/fonts/EnterCommand-Bold.ttf"
-      },
-      {
-        "type": "binary",
-        "key": "EnterCommandItalic",
-        "url": "./public/fonts/EnterCommand-Italic.ttf"
-      },
-      {
-        "type": "binary",
-        "key": "EnterCommand",
-        "url": "./public/fonts/EnterCommand.ttf"
       }
     ]
   },

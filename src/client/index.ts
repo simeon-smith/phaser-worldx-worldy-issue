@@ -1,4 +1,6 @@
 import Phaser from "phaser";
+// import WebFontLoader from "webfontloader";
+import FontFaceObserver from "fontfaceobserver";
 
 import "./main.scss";
 
@@ -37,5 +39,9 @@ export class Game extends Phaser.Game {
 }
 
 window.addEventListener("load", () => {
-  const game = new Game(config);
+  const EnterCommand = new FontFaceObserver("EnterCommand");
+  const EnterCommandItalic = new FontFaceObserver("EnterCommand", { style: "italic" });
+  Promise.all([EnterCommand.load(), EnterCommandItalic.load()]).then(() => {
+    const game = new Game(config);
+  });
 });

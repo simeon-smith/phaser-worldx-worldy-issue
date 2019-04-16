@@ -63,6 +63,8 @@ export default class InitialLoadingScene extends Phaser.Scene {
           .getElementById("game-wrapper")
           .querySelector("img")
           .classList.add("hide");
+
+        this.scene.start("HowToPlayScene");
       },
       this,
     );
@@ -70,9 +72,7 @@ export default class InitialLoadingScene extends Phaser.Scene {
     this.load.pack("initial", "../client/assets/pack.json");
   }
 
-  update(): void {
-    setTimeout(() => this.scene.start("HowToPlayScene"), 1000);
-  }
+  update(): void {}
 
   private createLoadingbar(): void {
     this.loadingBar = this.add.graphics();

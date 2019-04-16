@@ -15,9 +15,8 @@ export default class GameScene extends Phaser.Scene {
 
     this.speed = 15;
   }
-  preload(): void {
-    this.physics.world.setBounds(-1600, -600, 3200, 1200);
-    this.cameras.main.setBounds(-1600, -600, 3200, 1200);
+  preload(): void {}
+  create(): void {
     this.gridTest = this.add.image(0, 0, "gridTest");
     this.gridTest.setOrigin(0.5, 0.5).setDisplaySize(3200, 1200);
 
@@ -38,8 +37,10 @@ export default class GameScene extends Phaser.Scene {
     this.physics.add.collider(this.desk.deskSprite, this.player.bullets, (desk, bullet) => {
       this.player.clearBullet(bullet);
     });
+
+    this.physics.world.setBounds(-1600, -600, 3200, 1200);
+    this.cameras.main.setBounds(-1600, -600, 3200, 1200);
   }
-  create(): void {}
 
   update(): void {
     this.player.update();

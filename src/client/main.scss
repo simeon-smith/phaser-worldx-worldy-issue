@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'Enter Command';
+  font-family: 'EnterCommand';
   font-weight: normal;
   font-style: normal;
   src: url('/fonts/EnterCommand.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Enter Command';
+  font-family: 'EnterCommand';
   font-weight: normal;
   font-style: italic;
   src: url('/fonts/EnterCommand-Italic.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Enter Command';
+  font-family: 'EnterCommand';
   font-weight: "bold";
   font-style: normal;
   src: url('/fonts/EnterCommand-Bold.ttf') format('truetype');
@@ -31,7 +31,7 @@ $gray: #4d5257;
   background: $black;
   width: 800px;
   height: 600px;
-  position: relative;
+  // position: relative;
 
   img {
     width: 528px;
