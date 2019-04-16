@@ -19,8 +19,6 @@ const config: GameConfig = {
   scene: [InitialLoadingScene, HowToPlayScene, MainMenuScene, GameScene],
   input: {
     keyboard: true,
-    touch: true,
-    mouse: true,
   },
   physics: {
     default: "arcade",

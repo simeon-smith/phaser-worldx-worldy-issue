@@ -3,7 +3,7 @@ import Phaser from "phaser";
 export default class Character {
   public scene: Phaser.Scene;
   public location: { x: number; y: number };
-  public speed: number = 15;
+  public speed: number = 600;
   public key: string;
   public characterSprite: Phaser.GameObjects.Sprite;
 
