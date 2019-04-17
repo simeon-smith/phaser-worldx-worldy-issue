@@ -1,0 +1,21 @@
+{
+  "initial": {
+    "files": [
+      {
+        "type": "json",
+        "key": "animationJSON",
+        "url": "/assets/animations/animations.json"
+      },
+      {
+        "type": "json",
+        "key": "mainAssets",
+        "url": "/assets/packs/main.json"
+      },
+      {
+        "type": "image",
+        "key": "logo",
+        "url": "/assets/images/logo.svg"
+      }
+    ]
+  }
+}

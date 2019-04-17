@@ -26,7 +26,7 @@ module.exports = (env, argv) => {
     entry: "./src/client/index.ts",
     output: {
       filename: "index.js",
-      path: path.resolve(__dirname, "dist/client"),
+      path: path.resolve(__dirname, "dist/"),
       publicPath: "/",
     },
     devServer: {
@@ -46,6 +46,7 @@ module.exports = (env, argv) => {
       new webpack.HotModuleReplacementPlugin(),
       new webpack.NamedModulesPlugin(),
       new CopyPlugin([{ from: "src/public/fonts", to: "fonts" }]),
+      new CopyPlugin([{ from: "src/public/assets", to: "assets" }]),
     ],
     module: {
       rules: [

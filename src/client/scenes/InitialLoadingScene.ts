@@ -69,7 +69,7 @@ export default class InitialLoadingScene extends Phaser.Scene {
       this,
     );
 
-    this.load.pack("initial", "../client/assets/pack.json");
+    this.load.pack("initialAssets", "../assets/packs/initial.json");
   }
 
   update(): void {}

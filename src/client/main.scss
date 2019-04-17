@@ -2,21 +2,21 @@
   font-family: 'EnterCommand';
   font-weight: normal;
   font-style: normal;
-  src: url('/fonts/EnterCommand.ttf') format('truetype');
+  src: url('/assets/fonts/EnterCommand.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'EnterCommand';
   font-weight: normal;
   font-style: italic;
-  src: url('/fonts/EnterCommand-Italic.ttf') format('truetype');
+  src: url('/assets/fonts/EnterCommand-Italic.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'EnterCommand';
   font-weight: "bold";
   font-style: normal;
-  src: url('/fonts/EnterCommand-Bold.ttf') format('truetype');
+  src: url('/assets/fonts/EnterCommand-Bold.ttf') format('truetype');
 }
 
 $ease-in-out: cubic-bezier(0.455, 0.03, 0.515, 0.955);

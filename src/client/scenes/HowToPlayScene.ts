@@ -14,14 +14,22 @@ export default class HowToPlayScene extends Phaser.Scene {
   constructor() {
     super({
       key: "HowToPlayScene",
-      pack: {
-        key: "main",
-        file: "../assets/main-pack.json",
-      },
     });
   }
 
   preload(): void {
+    const mainAssets = this.cache.json.get("mainAssets");
+    console.log(mainAssets);
+
+    mainAssets.main.files.forEach(
+      (file: { type: string; key: string; url: string; frameConfig?: { frameWidth: number; frameHeight: number } }) => {
+        if (file.type === "spritesheet") {
+          this.load.spritesheet(file.key, file.url, file.frameConfig);
+        } else {
+          this.load[file.type](file.key, file.url);
+        }
+      },
+    );
     // this.load();
   }
 
